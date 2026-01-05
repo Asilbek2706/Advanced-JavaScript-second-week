@@ -33,5 +33,6 @@ parent.addEventListener("click", function (event) {
     alert("Parent clicked");
 }, true);
 child.addEventListener("click", function (event) {
+    event.stopPropagation()
     alert("Children clicked");
 }, true)
