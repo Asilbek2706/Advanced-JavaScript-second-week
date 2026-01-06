@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM ni aylanib chiqish</title>
+    <style>
+        div {
+            background-color: #121212;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+        }
+        #parent {
+            background-color: blue;
+        }
+        #child {
+            background-color: yellow;
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+<div id="grandparent">Grandparent
+    <div id="before-parent">Before parent</div>
+    <div id="parent">Parent
+        <div id="element">Element</div>
+    </div>
+    <div id="after-parent">After Parent</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
